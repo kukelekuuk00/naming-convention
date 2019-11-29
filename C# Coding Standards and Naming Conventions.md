@@ -143,13 +143,13 @@ int index = int.Parse(input);
 
 ***Why: consistent with the Microsoft's .NET Framework and makes code more natural to read.*** 
 
-#### 10. Do use implicit type var for local variable declarations. Exception: primitive types (int, string, double, etc) use predefined names. 
+#### 10. Do use implicit type var for local variable declarations. 
 
 ```csharp 
 var stream = File.Create(path);
 var customers = new Dictionary();
-// Exceptions
-int index = 100;
+var index = 100;
+
 string timeSheet;
 bool isCompleted;
 ```
